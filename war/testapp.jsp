@@ -42,7 +42,7 @@
 			var msglist = "msglist_";
 									
 			var contentString  = '#' + mrkID + '<div id="content">' +  	
-			  '<div class="msglist" id="'+ msglist +'"></div>' + '</div>' +
+			  '<div class="msglist" id="'+ msglist +'0"></div>' + '</div>' +
 			  '<textarea id="'+ msgbox +'" rows="2" cols="20"></textarea>' +			  
 			  '<input type="button" value="Post" onclick="postAjaxRequest('+ 
 				"'" + msgbox + "', '" + mrkID + "', '" + gstBkNm + "', '" + msglist + "'" +')"/>';  
