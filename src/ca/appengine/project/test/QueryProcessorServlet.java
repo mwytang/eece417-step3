@@ -65,14 +65,14 @@ public class QueryProcessorServlet extends HttpServlet {
         		 System.out.println(reqMarkerID + " " + markerID + " " + postMsg);
         		 // Test
         		        		    		 
-        		 responseHTMLString+="<div>";
+        		 responseHTMLString+="<div><span class='authorname'>";
         		 if (greeting.getProperty("user") == null) {
         			 responseHTMLString+="Anonymous";
         		 } else {
         			 String nickname = greeting.getProperty("user").toString().split("@")[0];        			 
         			 responseHTMLString+=nickname; //greeting.getProperty("user").toString();        			        			 
         		 } 
-        		 responseHTMLString+="("+ date +")";
+        		 responseHTMLString+="</span>("+ date +")";
         		 responseHTMLString+=": "; 
         		 responseHTMLString+=greeting.getProperty("postMsg").toString();
         		 responseHTMLString+="</div>";        		 

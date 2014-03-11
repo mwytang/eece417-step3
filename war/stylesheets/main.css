@@ -20,9 +20,13 @@ body {
 	width:260px;
 	height:160px;	
 	overflow-y:auto;
-	background-color:#FFFFFF;	
+	background-color:#99FFFF;	
 }
 
 #oldMsgList {
 	display:none;
+}
+
+#content .msglist .authorname {
+	font-weight: 900;	
 }
