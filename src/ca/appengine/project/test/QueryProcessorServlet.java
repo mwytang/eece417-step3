@@ -40,11 +40,15 @@ public class QueryProcessorServlet extends HttpServlet {
         
         // Run an ancestor query to ensure we see the most up-to-date
         // view of the Greetings belonging to the selected Guestbook.
-                
-        Query query = new Query("UBCEECE4172014MapGreeting", guestbookKey);
+
+        Filter markerIdFilter = new FilterPredicate("markerID",
+        		                      FilterOperator.EQUAL,
+        		                      reqMarkerID);
+        
+        Query query = new Query("UBCEECE4172014MapGreeting", guestbookKey).setFilter(markerIdFilter);
         query.addSort("date", Query.SortDirection.DESCENDING);
         
-        List<Entity> greetings = datastore.prepare(query).asList(FetchOptions.Builder.withLimit(5));
+        List<Entity> greetings = datastore.prepare(query).asList(FetchOptions.Builder.withLimit(10));
         
         String responseHTMLString = "";
         
