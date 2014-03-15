@@ -18,10 +18,8 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 
     <meta charset="utf-8">       
     <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
-    <script type="text/javascript" src="/javascripts/main.js"></script>        
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJAMSajyNP3bCvbUwcV7zY_rh6fHZ1Q7E&sensor=true">
-    </script>    
+    <script type="text/javascript" src="/javascripts/main.js"></script>         
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnKGB1sVx-WYMoDqgSV-qWuq0n0Wd3r8E&amp;sensor=true" style=""></script>
     <script type="text/javascript"> 
 	  
 		function initialize() {
@@ -38,11 +36,11 @@
 						
 			var mrkID = "0";
 			var gstBkNm = guestbookNameString; //"default";
-			var msgbox = "msgbox_";	
-			var msglist = "msglist_";
+			var msgbox = "msgbox_0";	
+			var msglist = "msglist_0";
 									
 			var contentString  = '#' + mrkID + '<div id="content">' +  	
-			  '<div class="msglist" id="'+ msglist +'0"></div>' + '</div>' +
+			  '<div class="msglist" id="'+ msglist +'"></div>' + '</div>' +
 			  '<textarea id="'+ msgbox +'" rows="2" cols="20"></textarea>' +			  
 			  '<input type="button" value="Post" onclick="postAjaxRequest('+ 
 				"'" + msgbox + "', '" + mrkID + "', '" + gstBkNm + "', '" + msglist + "'" +')"/>';  

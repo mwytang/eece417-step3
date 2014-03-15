@@ -5,7 +5,7 @@ html {
 body {
     font-family: Verdana, Helvetica, sans-serif;
 	font-weight:bold;
-    background-color: #E6E6E6;
+    background-color: #CCCC99;
     height: 100%; 
     margin: 0px; 
     padding: 0px; 
@@ -29,4 +29,9 @@ body {
 
 #content .msglist .authorname {
 	font-weight: 900;	
+}
+
+#map-canvas {
+	width: 75%;
+	margin: 0 auto;
 }
